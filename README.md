@@ -48,25 +48,6 @@ Thus the program to print even numbers ranging from M to N (including M and N va
 
 Write a C program to print the given triangular Star pattern using loop.
 
-EXAMPLE :
-
-INPUT:
-
-5
-
-OUTPUT :
-
-
-*****
-
-****
-
-***
-
-**
-
-*
-
 ## ALGORITHM:
 
 1.	Declare a variable to store the number of rows in the triangle.
