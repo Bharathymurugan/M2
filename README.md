@@ -1,7 +1,6 @@
 # EX-06 - Looping
 ## AIM:
-Write a C program to print even numbers ranging from M to N (including M and N values).
-
+Write a C Program to print the string "WINDOWS" n number of times.
 ## ALGORITHM:
 1.	Declare two integer variables to store the values of M and N.
 2.	Use the printf function to prompt the user to enter the values of M and N.
@@ -12,8 +11,21 @@ Write a C program to print even numbers ranging from M to N (including M and N v
 7.	Continue the loop until you have iterated through all numbers from M to N.
 
 ## PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    scanf("%d", &n);
+    for(i=1;i<=n;i++){
+        printf("WINDOWS\n");
+    }
+    return 0;
+}
 
 ## OUTPUT:
+<img width="1548" height="860" alt="Screenshot 2025-10-21 155515" src="https://github.com/user-attachments/assets/ec7ebcd4-7434-4d36-a9d2-56f171e33a8d" />
+
+
 
 
 
