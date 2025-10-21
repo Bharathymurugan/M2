@@ -46,7 +46,26 @@ Thus the program to print even numbers ranging from M to N (including M and N va
 
 ## AIM:
 
-Write a C program to print the given triangular pattern using loop.
+Write a C program to print the given triangular Star pattern using loop.
+
+EXAMPLE :
+
+INPUT:
+
+5
+
+OUTPUT :
+
+
+*****
+
+****
+
+***
+
+**
+
+*
 
 ## ALGORITHM:
 
@@ -57,9 +76,25 @@ Write a C program to print the given triangular pattern using loop.
 5.	Continue the loop until you have printed the entire triangular pattern.
 
 ## PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d ",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=n;j>=i;j--)
+        {
+        printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
 
 
 ## OUTPUT:
+<img width="1458" height="879" alt="Screenshot 2025-10-21 155742" src="https://github.com/user-attachments/assets/212c71aa-71ba-4ec8-aa5e-831f9c0aa3d8" />
 
 
 
@@ -76,7 +111,12 @@ Thus the program to print the given triangular pattern using loop has been execu
 
 ## AIM:
 
-Write a C program to perform addition and subtraction of two numbers using functions (with argument and without return type).
+Write a C program to generate Fibonacci series for given number using function with arguments & without return type.
+
+For example:
+
+Input	Result
+15     0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 
 
 ## ALGORITHM:
 
@@ -86,10 +126,34 @@ Write a C program to perform addition and subtraction of two numbers using funct
 4.	Call the addition and subtraction functions, passing the two numbers as arguments.
 
 ## PROGRAM:
+#include <stdio.h>
+void fibonacci(int a);
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    fibonacci(a);
+}
+
+void fibonacci(int a)
+{
+    int b=0,c=1,d;
+    {
+       for(int i=0;i<a;i++) 
+    
+   { printf("%d ", b);
+    d=b+c;
+   
+    b=c;
+    c=d;}
+    }
+    
+}
 
 
 ## OUTPUT:
 
+<img width="1504" height="873" alt="Screenshot 2025-10-21 155942" src="https://github.com/user-attachments/assets/b7f520d1-adcd-467e-affb-ce5aae29f8ed" />
 
 
 
@@ -106,7 +170,7 @@ Thus the program to perform addition and subtraction of two numbers using functi
 
 ## AIM:
 
-Write a c program to find the sum of odd digits using for loop
+Write a c program to find the sum of even digits using do while loop in a Given range
 
 ## ALGORITHM:
 
@@ -118,10 +182,28 @@ Write a c program to find the sum of odd digits using for loop
 6.	Print the sum of odd digits.
 
 ## PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int a,b,i,total=0;
+    scanf("%d %d", &a, &b);
+    i=a;
+    do
+    {
+        
+        if(i%2==0){
+            total+=i;
+        }
+        i++;
+    }while(i<=b);
+    printf("%d",total);
+    return 0;
+}
 
 
 ## OUTPUT:
 
+<img width="1506" height="873" alt="Screenshot 2025-10-21 160146" src="https://github.com/user-attachments/assets/29e6e6b1-07e0-43d9-91c7-8294c14dccac" />
 
 
 
@@ -134,7 +216,7 @@ Thus the program to find the sum of odd digits using for loop has been executed 
 
 # EX – 10 - Factorial of a Number Using a Function
 ## AIM:
-To write a C program that calculates the factorial of a given number using a user-defined function.
+Write a c program to find the sum of odd digits using for loop in a Given range
 ## ALGORITHM:
 1.	Start
 2.	Declare the function fact().
@@ -148,9 +230,30 @@ d.	After the loop, print the factorial value.
 5.	End
 
 ## PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int a,b,i,sum=0;
+    scanf("%d %d", &a, &b);
+    for(i=a;i<=b;i++)
+    {
+        if(i%2!=0)
+        {
+
+            printf("%d  ",i);
+            sum=sum+i;
+        }
+       
+    }
+    printf("\n%d",sum);
+    return 0;
+}
 
 
 ## OUTPUT:
+<img width="1471" height="880" alt="Screenshot 2025-10-21 160303" src="https://github.com/user-attachments/assets/82f93761-b84d-4a81-af26-d159b29192ba" />
+
+
 
 ## RESULT:
 The program correctly computes the factorial of a given number using a separate function and displays the result.
